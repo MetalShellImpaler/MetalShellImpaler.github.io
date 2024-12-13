@@ -3,40 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="description" content="Interactive terminal portfolio for IT Systems Administrator and Penetration Tester.">
+  <title>Interactive Terminal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Welcome to Anael Russo's IT Portfolio website</h1>
+    <p>Explore my skills, projects, and expertise in an interactive Linux terminal.</p>
   </header>
 
   <main>
-    <section id="about">
-      <h1>Welcome to My Portfolio</h1>
-      <p>
-        I'm an IT Specialist passionate about penetration testing, home labs, and automating IT processes. Explore my work and skills here.
-      </p>
-      <a href="#projects" class="btn">Explore Projects</a>
-    </section>
+    <div id="terminal-container">
+      <div id="terminal-header">
+        <div class="title-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">Linux Terminal</span>
+        </div>
+      </div>
+      <div id="terminal">
+        <div id="terminal-output"></div>
+        <div id="terminal-input">
+          <span class="prompt">$</span>
+          <input type="text" id="input-line" autocomplete="off">
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2024 Your Name. Built with ❤️ for GitHub Pages.</p>
-    <div class="social-icons">
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
-      <a href="mailto:your-email@example.com">Email</a>
+    <p>Find me on:</p>
+    <div class="social-links">
+      <a href="https://github.com/your-username" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/your-handle" target="_blank">Twitter</a>
     </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
