@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const commands = {
     clear: () => (terminalOutput.innerHTML = ''),
     help: () => `Available commands:\n${Object.keys(commands).join(', ')}`,
-    whoami: () => 'User: [Your Name]\nRole: IT Professional and Penetration Tester',
+    whoami: () => 'User: Anael Russo\nRole: IT Professional and Penetration Tester',
     uname: () => 'Linux portfolio-machine 5.15.0-46-generic #49~20.04 SMP x86_64 GNU/Linux',
     ls: () => 'about.txt   skills.txt   projects/   blog/',
     cd: (args) => (args[0] === 'projects' ? 'Moved to /projects/' : 'Directory not found'),
     cat: (args) => {
-      if (args[0] === 'about.txt') return 'Welcome to [Your Name]\'s IT Portfolio!';
+      if (args[0] === 'about.txt') return 'Welcome to Anael Russo\'s IT Portfolio!';
       return 'File not found';
     },
     history: () => commandHistory.join('\n'),
@@ -35,8 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         ? commands[command](args)
         : `${command}: command not found`;
 
+      // Append input and output to terminal output
       terminalOutput.innerHTML += `<div><span class="prompt">$</span> ${input}</div>`;
       terminalOutput.innerHTML += `<div>${output}</div>`;
+
+      // Automatically scroll to the bottom of the output
       terminalOutput.scrollTop = terminalOutput.scrollHeight;
     }
   });
