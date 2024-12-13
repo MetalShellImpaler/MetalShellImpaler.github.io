@@ -1,4 +1,4 @@
-/* Global Styles */
+/* ===== Global Styles ===== */
 body {
   margin: 0;
   padding: 0;
@@ -27,28 +27,27 @@ header p {
   font-size: 1rem;
 }
 
-/* Terminal Container */
+/* ===== Terminal Container ===== */
 #terminal-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  margin: 0 auto;
-  width: 95%;
-  max-width: 1400px;
-  height: 90%;
+  justify-content: flex-start;
+  width: 90vw;
+  height: 85vh;
+  margin: auto;
   border-radius: 10px;
-  background: #000;
+  background-color: #000;
   box-shadow: 0 4px 20px rgba(0, 255, 0, 0.4);
+  overflow: hidden;
 }
 
 #terminal-header {
-  background: #333;
+  background-color: #333;
   width: 100%;
   padding: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -66,45 +65,37 @@ header p {
 }
 
 .red {
-  background: #ff605c;
+  background-color: #ff605c;
 }
 
 .yellow {
-  background: #ffbd44;
+  background-color: #ffbd44;
 }
 
 .green {
-  background: #00ca56;
+  background-color: #00ca56;
 }
 
 .terminal-title {
   color: #ccc;
   font-size: 0.9rem;
+  margin-left: 10px;
 }
 
-/* Terminal Content */
-#terminal {
-  flex: 1;
-  width: 100%;
-  padding: 500px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-#terminal-output {
-  flex: 1;
-  overflow-y: auto;
-  white-space: pre-wrap;
-}
-
+/* ===== Terminal Input (Top) ===== */
 #terminal-input {
   display: flex;
   align-items: center;
+  padding: 10px;
+  background-color: #222;
+  border-bottom: 1px solid #333;
+  width: 100%;
 }
 
 .prompt {
   margin-right: 5px;
+  font-weight: bold;
+  color: #00ff00;
 }
 
 #input-line {
@@ -120,12 +111,43 @@ header p {
   outline: none;
 }
 
-/* Footer Styles */
+/* ===== Terminal Output (Below Input) ===== */
+#terminal-output {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  background-color: #000;
+  color: #00ff00;
+  width: 100%;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  #terminal-container {
+    width: 95vw;
+    height: 80vh;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Footer Styles ===== */
 footer {
   text-align: center;
-  background: #222;
+  background-color: #222;
   padding: 10px;
   border-top: 2px solid #00ff00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .social-links a {
