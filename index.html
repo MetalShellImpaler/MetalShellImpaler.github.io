@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive terminal portfolio for IT Systems Administrator and Penetration Tester.">
-  <title>Interactive Terminal Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anael Russo Terminal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Anael Russo's IT Portfolio Website</h1>
-    <p>Explore my skills, projects, and expertise in an interactive Linux terminal.</p>
-  </header>
+    <div class="container">
+        <!-- Bio Section -->
+        <section class="bio-section">
+            <div class="profile-container">
+                <!-- Profile Image Placeholder -->
+                <!-- <div class="profile-image"></div> -->
 
-  <main>
-    <div id="terminal-container">
-      <div id="terminal-header">
-        <div class="title-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="terminal-title">Linux Terminal</span>
-        </div>
-      </div>
-      <div id="terminal-input">
-        <span class="prompt">$</span>
-        <input type="text" id="input-line" autocomplete="off" placeholder="Type your command...">
-      </div>
-      <div id="terminal-output"></div>
+                <!-- Bio Content -->
+                <div class="bio-content">
+                    <h1>Anael Russo</h1>
+                    <h2> IT Sysadmin with PenTesting Skills</h2>
+
+                    <!-- About Me Section -->
+                    <div class="about-me">
+                        <h3>About Me</h3>
+                         🌐🔒Driven and skilled in Cyber Security with hands-on experience in IT security and system administration.
+Proven ability to identify and address security risks through comprehensive assessments.
+Proficient in utilizing advanced tools and techniques to enhance security posture.
+Solid IT background with a B.Ed and specialized cybersecurity training.🛡️
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="skills">
+                        <h3>Skills</h3>
+Technical Aptitude <br>
+Hacker Mindset <br>
+Root Cause Analysis <br>
+Documenting operational procedures  <br>
+Ability to Multitask <br>
+Ability to Work Under Pressure <br>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        find me on LinkedIn and GitHub <br>
+                    </div>
+                </div>
+            </div>
+            <div class="social-buttons">
+    <a href="https://www.linkedin.com/in/anael-russo/" target="_blank" class="social-button linkedin">
+        <i class="fab fa-linkedin"></i>LinkedIn
+    </a>
+    <a href="https://github.com/MetalShellImpaler" target="_blank" class="social-button github">
+        <i class="fab fa-github"></i>GitHub
+    </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</div>
+<br>
+<img src="https://tryhackme-badges.s3.amazonaws.com/anaelrusso.png" alt="Your Image Badge" />
+
+        </section>
+
+
+        <!-- Terminal Section -->
+        <section class="terminal-section">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="close"></span>
+                        <span class="minimize"></span>
+                        <span class="maximize"></span>
+                    </div>
+                    <div class="terminal-title">guest@portfolio-server</div>
+                </div>
+                <div class="terminal-body">
+                    <div id="output"></div>
+                    <div class="input-line">
+                        <span class="prompt">guest@portfolio-server:~$</span>
+                        <input type="text" id="command-input" autofocus spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </main>
-
-  <footer>
-    <p>Find me on:</p>
-    <div class="social-links">
-      <a href="https://github.com/MetalShellImpaler" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/anael-russo/" target="_blank">LinkedIn</a>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
