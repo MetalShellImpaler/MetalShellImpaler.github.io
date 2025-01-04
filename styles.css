@@ -205,4 +205,115 @@ body {
     }
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Container adjustments */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        height: auto;
+        min-height: 100vh;
+    }
 
+    /* Bio section adjustments */
+    .bio-section {
+        flex: none;
+        max-height: none;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bio-content {
+        padding: 15px 10px;
+    }
+
+    .bio-content h1 {
+        font-size: 24px;
+    }
+
+    .bio-content h2 {
+        font-size: 18px;
+    }
+
+    /* Terminal section adjustments */
+    .terminal-section {
+        flex: none;
+        height: 60vh;
+    }
+
+    .terminal {
+        font-size: 14px;
+    }
+
+    .terminal-header {
+        padding: 8px;
+    }
+
+    .terminal-body {
+        padding: 10px;
+    }
+
+    /* Social buttons adjustment */
+    .social-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-button {
+        justify-content: center;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 380px) {
+    .terminal {
+        font-size: 12px;
+    }
+
+    .bio-content h1 {
+        font-size: 20px;
+    }
+
+    .bio-content h2 {
+        font-size: 16px;
+    }
+
+    .terminal-buttons span {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+    }
+
+    .bio-section {
+        width: 40%;
+        overflow-y: auto;
+    }
+
+    .terminal-section {
+        width: 60%;
+        height: 100vh;
+    }
+}
+
+/* Ensure content is scrollable on very small screens */
+@media screen and (max-height: 600px) {
+    .bio-section {
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+
+    .terminal-section {
+        height: 55vh;
+    }
+}
