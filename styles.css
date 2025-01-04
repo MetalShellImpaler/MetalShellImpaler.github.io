@@ -205,35 +205,40 @@ body {
     }
 }
 
+
 /* mobile */
 body {
     overflow-y: auto;
     height: 100%;
-    position: relative;
-}
-
-.container {
-    min-height: 100%;
-    overflow-y: auto;
-    position: relative;
-    padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 
 @media screen and (max-width: 768px) {
     .container {
-        height: auto;
-        overflow: visible;
         flex-direction: column;
-        gap: 10px;
+        height: auto;
+        min-height: 100vh;
+        padding: 10px;
+        gap: 15px;
+        overflow-y: visible;
     }
     
-    /* Bio section  */
+    /* Bio section */
     .bio-section {
+        position: relative;
+        min-height: fit-content;
         height: auto;
-        overflow: visible;
-        margin-bottom: 20px;
+        width: auto;
         padding: 15px;
+        overflow-y: visible;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .profile-image {
@@ -242,27 +247,37 @@ body {
     }
 
     .bio-content {
-        padding: 15px 10px;
+        padding: 10px;
     }
 
     .bio-content h1 {
         font-size: 24px;
+        margin-bottom: 8px;
     }
 
     .bio-content h2 {
         font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .bio-content h3 {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+
+    .about-me, .skills, .contact {
+        margin-bottom: 20px;
     }
     
-    /* Terminal */
+    /* Terminal  */
     .terminal-section {
         height: 500px;
-        min-height: 60vh;
+        min-height: 50vh;
         position: relative;
     }
     
     .terminal {
         height: 100%;
-        overflow: hidden;
         display: flex;
         flex-direction: column;
         font-size: 14px;
@@ -279,14 +294,17 @@ body {
         padding: 8px;
     }
 
-    /* Social buttons */
+    /* Social buttons  */
     .social-buttons {
+        display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-top: 15px;
     }
 
     .social-button {
         justify-content: center;
+        width: 100%;
     }
 }
 
@@ -296,8 +314,12 @@ body {
         padding: 5px;
     }
 
-    .terminal {
-        font-size: 12px;
+    .bio-section {
+        padding: 10px;
+    }
+
+    .bio-content {
+        padding: 8px;
     }
 
     .bio-content h1 {
@@ -306,6 +328,10 @@ body {
 
     .bio-content h2 {
         font-size: 16px;
+    }
+
+    .terminal {
+        font-size: 12px;
     }
 
     .terminal-buttons span {
@@ -318,39 +344,64 @@ body {
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .container {
         flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .bio-section {
         width: 40%;
+        height: 100vh;
         overflow-y: auto;
-        margin-bottom: 0;
+        padding: 10px;
     }
 
     .terminal-section {
         width: 60%;
         height: 100vh;
     }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
 }
 
-/* Very small screens */
-@media screen and (max-height: 600px) {
+/* small height screens */
+@media screen and (max-height: 600px) and (orientation: portrait) {
+    .container {
+        gap: 10px;
+    }
+
     .bio-section {
-        max-height: 40vh;
-        overflow-y: auto;
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .bio-content h1 {
+        font-size: 18px;
+    }
+
+    .bio-content h2 {
+        font-size: 14px;
     }
 
     .terminal-section {
-        height: 55vh;
+        height: 400px;
     }
 }
 
-/* smooth scrolling  */
+/* Touch */
 @media (hover: none) and (pointer: coarse) {
-    * {
+    .bio-section, .terminal-body {
         -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
     }
     
-    .terminal-body {
-        scrollbar-width: thin;
+    .bio-content {
+        word-wrap: break-word;
     }
 }
