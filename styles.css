@@ -205,21 +205,34 @@ body {
     }
 }
 
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
-    /* Container adjustments */
-    .container {
-        flex-direction: column;
-        padding: 10px;
-        gap: 10px;
-        height: auto;
-        min-height: 100vh;
-    }
+/* mobile */
+body {
+    overflow-y: auto;
+    height: 100%;
+    position: relative;
+}
 
-    /* Bio section adjustments */
+.container {
+    min-height: 100%;
+    overflow-y: auto;
+    position: relative;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        overflow: visible;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Bio section  */
     .bio-section {
-        flex: none;
-        max-height: none;
+        height: auto;
+        overflow: visible;
+        margin-bottom: 20px;
         padding: 15px;
     }
 
@@ -239,26 +252,34 @@ body {
     .bio-content h2 {
         font-size: 18px;
     }
-
-    /* Terminal section adjustments */
+    
+    /* Terminal */
     .terminal-section {
-        flex: none;
-        height: 60vh;
+        height: 500px;
+        min-height: 60vh;
+        position: relative;
     }
-
+    
     .terminal {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
+    }
+    
+    .terminal-body {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px;
     }
 
     .terminal-header {
         padding: 8px;
     }
 
-    .terminal-body {
-        padding: 10px;
-    }
-
-    /* Social buttons adjustment */
+    /* Social buttons */
     .social-buttons {
         flex-direction: column;
         gap: 10px;
@@ -271,6 +292,10 @@ body {
 
 /* Small phones */
 @media screen and (max-width: 380px) {
+    .container {
+        padding: 5px;
+    }
+
     .terminal {
         font-size: 12px;
     }
@@ -298,6 +323,7 @@ body {
     .bio-section {
         width: 40%;
         overflow-y: auto;
+        margin-bottom: 0;
     }
 
     .terminal-section {
@@ -306,7 +332,7 @@ body {
     }
 }
 
-/* Ensure content is scrollable on very small screens */
+/* Very small screens */
 @media screen and (max-height: 600px) {
     .bio-section {
         max-height: 40vh;
@@ -315,5 +341,16 @@ body {
 
     .terminal-section {
         height: 55vh;
+    }
+}
+
+/* smooth scrolling  */
+@media (hover: none) and (pointer: coarse) {
+    * {
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .terminal-body {
+        scrollbar-width: thin;
     }
 }
