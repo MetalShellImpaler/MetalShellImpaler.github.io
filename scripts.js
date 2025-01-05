@@ -27,7 +27,7 @@ const bootMessages = [
     '',
     'Welcome to Terminal OS 1.0.0 LTS',
     '',
-    `${CONFIG.user}@${CONFIG.hostname}'s portfolio terminal`,
+    `${CONFIG.user}@${CONFIG.hostname}'s terminal`,
     'Type "help" for available commands',
     ''
 ].join('\n');
