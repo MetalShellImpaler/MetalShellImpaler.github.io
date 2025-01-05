@@ -25,7 +25,7 @@ const bootMessages = [
     '[    2.028150] systemd[1]: Reached target Login Prompts.',
     `[    2.029022] systemd[1]: Started User Login Management.`,
     '',
-    'Welcome to Portfolio Terminal OS 1.0.0 LTS',
+    'Welcome to Terminal OS 1.0.0 LTS',
     '',
     `${CONFIG.user}@${CONFIG.hostname}'s portfolio terminal`,
     'Type "help" for available commands',
