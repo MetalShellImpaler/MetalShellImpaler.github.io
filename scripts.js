@@ -1,7 +1,7 @@
 // Terminal System Configuration
 const CONFIG = {
     user: 'guest',
-    hostname: 'portfolio-server',
+    hostname: 'AnaelRusso-server',
     cpu: 'AMD EPYC™ 9965 192 core CPU',
     ram: '1500GB',
     gpu: 'NVIDIA GB200 NVL72 36 Grace CPU : 72 Blackwell GPUs',
