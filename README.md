@@ -11,8 +11,6 @@ It is hosted using GitHub Pages, which allows for easy deployment of static webs
 
 ## Technologies Used
 
-The website is built using the following technologies:
-
 - **HTML**
 - **CSS**
 - **JavaScript**
