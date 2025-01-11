@@ -14,5 +14,3 @@ It is hosted using GitHub Pages, which allows for easy deployment of static webs
 - **HTML**
 - **CSS**
 - **JavaScript**
-
-To view the website, simply navigate to [https://metalshellimpaler.github.io/](https://metalshellimpaler.github.io/).
