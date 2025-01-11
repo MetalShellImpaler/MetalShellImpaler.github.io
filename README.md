@@ -2,18 +2,19 @@
 
 [MetalShellImpaler.github.io](https://metalshellimpaler.github.io/)
 
-Welcome to the repository for [Anael Russo's / MetalShellImpaler's GitHub Pages website](https://metalshellimpaler.github.io/). This site showcases various projects and serves as a personal portfolio.
+Welcome to the repository for [Anael Russo's / MetalShellImpaler's GitHub repo-website](https://metalshellimpaler.github.io/).
 
 ## About
 
-This website is a personal portfolio created to display projects and share information about MetalShellImpaler. It is hosted using GitHub Pages, which allows for easy deployment of static websites directly from GitHub repositories.
+This GitHub repository is hosting my personal website, created to showcase my skill set. 
+It is hosted using GitHub Pages, which allows for easy deployment of static websites directly from GitHub repositories.
 
 ## Technologies Used
 
 The website is built using the following technologies:
 
-- **HTML**: For structuring the content.
-- **CSS**: For styling the website.
-- **JavaScript**: For interactive features.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 To view the website, simply navigate to [https://metalshellimpaler.github.io/](https://metalshellimpaler.github.io/).
