@@ -6,7 +6,7 @@ Welcome to the repository for [Anael Russo's / MetalShellImpaler's GitHub Pages 
 
 ## About
 
-This website is a personal portfolio created to display projects and share information about MetalShellImpaler. It is hosted using GitHub Pages, which allows for easy deployment of static websites directly from GitHub repositories. :contentReference[oaicite:0]{index=0}
+This website is a personal portfolio created to display projects and share information about MetalShellImpaler. It is hosted using GitHub Pages, which allows for easy deployment of static websites directly from GitHub repositories.
 
 ## Technologies Used
 
